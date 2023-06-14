@@ -128,26 +128,26 @@ class SelectableBuildHelper {
     // isScrolling = $isScrolling');
 
     return [
-      Positioned.fromRect(
-        rect: leftRect,
-        child: _SelectionHandle(
-          delegate: selectionDelegate,
-          handleType: SelectionHandleType.left,
-          mainKey: mainKey,
-          child: controls!.buildHandle(
-              context, TextSelectionHandleType.left, leftLineHeight),
-        ),
-      ),
-      Positioned.fromRect(
-        rect: rightRect,
-        child: _SelectionHandle(
-          delegate: selectionDelegate,
-          handleType: SelectionHandleType.right,
-          mainKey: mainKey,
-          child: controls!.buildHandle(
-              context, TextSelectionHandleType.right, rightLineHeight),
-        ),
-      ),
+//       Positioned.fromRect(
+//         rect: leftRect,
+//         child: _SelectionHandle(
+//           delegate: selectionDelegate,
+//           handleType: SelectionHandleType.left,
+//           mainKey: mainKey,
+//           child: controls!.buildHandle(
+//               context, TextSelectionHandleType.left, leftLineHeight),
+//         ),
+//       ),
+//       Positioned.fromRect(
+//         rect: rightRect,
+//         child: _SelectionHandle(
+//           delegate: selectionDelegate,
+//           handleType: SelectionHandleType.right,
+//           mainKey: mainKey,
+//           child: controls!.buildHandle(
+//               context, TextSelectionHandleType.right, rightLineHeight),
+//         ),
+//       ),
       AnimatedOpacity(
         opacity: isShowingPopupMenu ? 1.0 : 0.0,
         duration: const Duration(milliseconds: 200),
